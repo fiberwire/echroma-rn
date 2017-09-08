@@ -13,6 +13,8 @@ export class Path {
       g.g.int(o.minY, o.maxY)
     )
 
+    const length = g.g.int(o.minPaths, o.maxPaths)
+
     const paths: Path[] = _.range(length)
       .map(() => {
 
@@ -54,7 +56,11 @@ export class Path {
       })
 
     // combine segments of path into one full path
-    const path = paths.reduce((p, c) => new Path(`${p.d} ${c.d}`))
+    const path = new Path(
+      paths
+        .map(p => p.d)
+        .reduce((p, c) => `${p} ${c}`)
+    )
 
     if (close) { return path.close() } else { return path }
   }
