@@ -7,6 +7,10 @@ import { Path } from '../models/path'
 
 export default class PaintingSpecimen extends Specimen<PaintingGenOptions, Painting> {
 
+  ageSpecimen(n: number): PaintingSpecimen {
+    return new PaintingSpecimen(this.genotype, this.age + n)
+  }
+
   public createPhenotype(genotype: Genome<PaintingGenOptions>): Painting {
     const g = genotype
     const o = g.options

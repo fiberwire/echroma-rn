@@ -1878,9 +1878,9 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
-enome@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/enome/-/enome-4.2.0.tgz#3fb4f61b83f9bc96b189f5eb708d4732b95e4274"
+enome@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/enome/-/enome-4.3.0.tgz#4da77747044abdf8d0532cfabeb319ff9cef60ca"
   dependencies:
     chance "^1.0.10"
     d3-interpolate "^1.1.5"
@@ -6148,7 +6148,7 @@ webidl-conversions@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
 
-"websql@github:expo/node-websql#18.0.0":
+websql@expo/node-websql#18.0.0:
   version "0.4.4"
   resolved "https://codeload.github.com/expo/node-websql/tar.gz/e364fa65146a9e2157a19e5c719e7702c2b6b87a"
   dependencies:
