@@ -17,8 +17,9 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "dev": "concurrently \"tsc --watch\" \"yarn start\"",
+    "dev": "concurrently \"yarn run compile\" \"yarn start\" \"yarn test\"",
     "start": "react-native-scripts start",
+    "compile": "tsc --watch",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
