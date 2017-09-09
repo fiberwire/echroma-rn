@@ -98,7 +98,7 @@ export class Path {
   }
 
   public circle(cx: number, cy: number, r: number): Path {
-    const d = `M ${cx - r}, ${cy} A ${r}, ${r} 0 1, 0 ${r * 2}, 0 A ${r}, ${r} 0 1, 0 ${-r * 2}, 0 `
+    const d = `M ${cx - r}, ${cy} A ${r}, ${r} 0 1, 0 ${r * 2}, 0 A ${r}, ${r} 0 1, 0 ${-r * 2}, 0`
     return new Path(`${this.d} ${d}`)
   }
 

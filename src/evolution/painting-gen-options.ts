@@ -1,43 +1,43 @@
 
-import { IGenomeOptions } from 'enome';
+import { IGenomeOptions } from 'enome'
 
 export interface PaintingGenOptions extends IGenomeOptions {
 
-    width: number;
-    height: number;
+    width: number
+    height: number
 
     // min and max coordinates
-    minX: number;
-    maxX: number;
+    minX: number
+    maxX: number
 
-    minY: number;
-    maxY: number;
+    minY: number
+    maxY: number
 
     // number of paths
-    minPaths: number;
-    maxPaths: number;
+    minPaths: number
+    maxPaths: number
 
     // number of segments in path
-    minLength: number;
-    maxLength: number;
+    minLength: number
+    maxLength: number
 
     // arcs
-    minXRadius: number;
-    maxXRadius: number;
+    minXRadius: number
+    maxXRadius: number
 
-    minYRadius: number;
-    maxYRadius: number;
+    minYRadius: number
+    maxYRadius: number
 
-    minRotation: number;
-    maxRotation: number;
+    minRotation: number
+    maxRotation: number
 
-    minLarge: number;
-    maxLarge: number;
+    minLarge: number
+    maxLarge: number
 
-    minSweep: number;
-    maxSweep: number;
+    minSweep: number
+    maxSweep: number
 
     // circles
-    minRadius: number;
-    maxRadius: number;
+    minRadius: number
+    maxRadius: number
 }
